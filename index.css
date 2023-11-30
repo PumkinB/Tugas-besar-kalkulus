@@ -1,0 +1,56 @@
+.output {
+    margin-top: 45px;
+}
+
+.inputButton {
+    height: 10px; 
+    padding-right: 70px;
+ } 
+
+main {
+    
+    flex: 1;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+input {
+    padding: 20px;
+    width: 30%;
+}
+
+.input {
+    margin-bottom: 50px;
+}
+
+output {
+    padding: 20px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #a6a6a6;
+}
+
+button:active {
+    transform:translateY(2px);
+    background-color: lightgreen;
+}
+
+h2 {
+    color: crimson;
+    border: 2px solid black;
+    margin-right: 70%;
+}
+
+button.hapus:active {
+    background-color: red ;
+}
+
+
+
+
+
