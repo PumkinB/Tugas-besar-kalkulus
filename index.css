@@ -1,54 +1,106 @@
-.output {
-    margin-top: 45px;
-}
-
-.inputButton {
-    height: 10px; 
-    padding-right: 70px;
- } 
-
-main {
-    
-    flex: 1;
-    padding: 20px;
-}
-
-header h1 {
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header {
     text-align: center;
-}
-
-input {
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    width: 100%;
+  }
+  
+  .input-box,
+  .output-box {
+    flex: 1;
+    border: 1px solid black;
     padding: 20px;
-    width: 30%;
-}
-
-.input {
+    margin: 30px;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 20px 10px;
+    width: 70%;
+  }
+  
+  .input {
     margin-bottom: 50px;
-}
-
-output {
-    padding: 20px;
-    width: 50%;
-}
-
-button:hover {
+  }
+  
+  .output {
+    margin-bottom: 50px;
+    width: 70%;
+  }
+  
+  button:hover {
     background-color: #a6a6a6;
-}
-
-button:active {
-    transform:translateY(2px);
-    background-color: lightgreen;
-}
-
-h2 {
+  }
+  
+  button:active {
+    transform: translateY(2px);
+    background-color: rgb(2, 235, 2);
+  }
+  
+  h2 {
     color: crimson;
-    border: 2px solid black;
-    margin-right: 70%;
-}
+  }
+  
+  button.hapus:active {
+    background-color: crimson;
+  }
+  
+  .inputButton {
+    height: 10px;
+    padding-right: 70px;
+  }
+  
+  footer {
+    position: relative;
+    text-align: center;
+  }
 
-button.hapus:active {
-    background-color: red ;
+  .note {
+    margin-right: 60%;
+  }
+
+@media (min-width: 320px) and (max-width: 767px){ 
+  main {
+    display: grid;
+    width: 100%;
+  }
+
+  button .hapus, .inputButton {
+    display: flex;
+    gap: 0.625rem;
+    font-size: larger;
+    width: auto;
+    height: auto;
+  }
+
+  .input-box,
+  .output-box {
+    flex: 1;
+    border: 1px solid black;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    margin-top: 2.5rem;
+  }
+
+  .note {
+    margin-right: 0.625rem;
+  }
+
 }
+  
 
 
 

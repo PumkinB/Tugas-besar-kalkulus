@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tugas Besar Kalkulus</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header>
-        <h1>Turunan Fungsi Aljabar</h1>
+      <h1>Turunan Fungsi Aljabar</h1>
     </header>
 
-    <div>
-        <h2>Harap baca note agar tidak salah paham!</h2>
-        <h3>Note :</h3>
-        <ul>
-            <li>Klik "Both" jika anda masukkan angka dan pangkat.</li>
-            <p>Contoh f(x) = a x^n</p>
-            <li>Klik "Pangkat saja" jika anda masukkan pangkat saja. </li>
-            <p>Contoh f(x) = x^n</p>
-            <li>Klik "Reset" untuk delete</li>
-        </ul>
-    </div>
-    <main>
-        <label for="input-field">Masukkan angka :</label>
-        <br>
-        <input class="input" id="input-field" type="text" placeholder="Harus berupa angka">
-        <br>
-        <label for="input-field2">Masukkan pangkat :</label>
-        <br>
-        <input class="input" id="input-field2" type="text" placeholder="Harus berupa angka">
-        
-        <div class="inputButton">
-            <button type="button" onclick="klik()">Both </button>
-            <button type="button" onclick="pencet()">Pangkat saja</button>
-            <button class="hapus" type="button" onclick="res()">Reset</button>
-         </div>
-        
-    <div class="output">
-        <label for="outout-field">Jawaban :</label>
-        <br>
-        <input id="output-field" type="text" placeholder="Jawaban" readonly>
-        <br>
-        <label for="output-field2">Calculation :</label>
-        <br>
-        <input id="output-field2" type="text" placeholder="Calculation" readonly>
+    <div class="container">
+      <div class="note">
+      <h2>Wajib baca note agar tidak salah paham!</h2>
+      <h3>Note :</h3>
+      <ul>
+        <li>Jika anda ingin masukkan pangkat nya saja <b>tolong masukkan angka 1!</b></li>
+        <p>Contoh f(x) = x^n</p>
+        <li>Klik "Reset" untuk delete</li>
+      </ul>
     </div>  
-    </main>
+      <main>
+        <div class="input-box">
+          <label for="input-field">Masukkan angka :</label>
+          <br />
+          <input class="input" id="input-field" type="number" placeholder="f(x) = a x^n" />
+          <br />
+          <label for="input-field2">Masukkan pangkat :</label>
+          <br />
+          <input class="input" id="input-field2" type="number" placeholder=" f(x) = x^n" />
 
+          <div class="inputButton">
+            <button type="button" onclick="klik()">Click</button>
+          </div>
+        </div>
+
+        <div class="output-box">
+          <label for="output-field">Jawaban :</label>
+          <br />
+          <input class="output" id="output-field" type="text" placeholder="Jawaban" readonly />
+          <br />
+          <label for="output-field2">Calculation :</label>
+          <br />
+          <input class="output" id="output-field2" type="text" placeholder="Calculation" readonly />
+        </div>
+      </main>
+    </div>
     <footer>
-        <h4>Di buat oleh OLIVER CHIN 411231197 Teknik Informatika</h4>
+      <h4>Di buat oleh OLIVER CHIN 411231197 Teknik Informatika</h4>
     </footer>
 
     <script src="kalkulator.js"></script>
-</body>
+  </body>
 </html>
